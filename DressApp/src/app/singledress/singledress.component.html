@@ -1,0 +1,25 @@
+
+<h1> Single Dress component</h1>
+<form (submit)="rentadress()">
+<p> image:displaydress.image </p>
+<p> Name: displaydress.name> </p>
+<p>Price: displaydress.price</p>
+
+<Label>Size:</Label>
+  <select name="mydropdown">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+  </select><br>
+
+<Label>ZIP Code</Label>
+    <input type="text" pattern="[0-9]{5}" title="Five digit zip code" /><br>
+
+
+  <label for="from">Rent From:</label>
+<input id="from" name="from" type="date" min="2017-07-08" max="2017-07-30"><br>
+<Label>Rent To </Label>
+<input type="date" name="rentday" min="<1day after rent day>"><br>
+
+<input type="submit" value="Rent"><br>
+</form>

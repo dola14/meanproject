@@ -1,0 +1,15 @@
+<h1> Dashboard Component</h1>
+
+<div *ngFor="let dress of tasks.products">
+  <label> Name: </label>
+  <p>{{dress.brandedName}}</p>
+ <label> Description: </label>
+  <p>{{dress.description}}</p>
+ <label> Actual Price: </label>
+ <p>{{dress.priceLabel}}</p>
+    <br> <label> Rent Price: </label>
+ <p>{{dress.salePriceLabel}}</p>
+  <br> <label> Image: </label><br>
+  <a href="/">{{dress.image.sizes.XLarge.url}}</a>
+  <img src="{{dress.image.sizes.XLarge.url}}">
+</div>
