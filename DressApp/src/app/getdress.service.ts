@@ -11,16 +11,17 @@ export class GetdressService {
   dress: Dress = null;
   constructor(private _http: Http) { }
   retrieveDresses() {
-    this.url = `http://www.api.shopstyle.com/api/v2/products?pid=uid7225-39667915-4&format=json&cat=dresses`;
+    this.url = `http://api.shopstyle.com/api/v2/products?pid=uid7225-39667915-4&format=json&cat=dresses`;
     console.log(this.url);
-   return this._http.get(this.url).map(data=>data.json()).toPromise();
+   //return this._http.get(this.url).map(data=>data.json()).toPromise();
 
-    /*var bubbles = this._http.get(this.url).map(data=>data.json()).toPromise();
+    var bubbles = this._http.get(this.url).map(data=>data.json()).toPromise();
     bubbles.then((data) => {
-        this.dress.name = data.products.brandedName
-        console.log("this.dress.name", this.dress.name);
+        console.log("In dressservice", data.products[0].brandedName);
+        //this.dress.name = data.products[0].brandedName
+        //console.log("this.dress.name", this.dress.name);
     })
-      return bubbles;*/
+      return bubbles;
   }
 
  }

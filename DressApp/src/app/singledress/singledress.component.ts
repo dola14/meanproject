@@ -9,8 +9,13 @@ import { Dress } from '../Dress';
   styleUrls: ['./singledress.component.css']
 })
 export class SingledressComponent implements OnInit {
+  ngOnInit(){
+   // this._dress.find();
+  }
 
-  dresses: Dress[] = [];
+   constructor(private _dress: GetdressService){  }
+
+  /*dresses: Dress[] = [];
   dress: Dress = new Dress();
 
  
@@ -34,7 +39,7 @@ export class SingledressComponent implements OnInit {
       })
       .catch((err)=> {
         console.log("error retrieving messages", err);
-      })
+      })*/
 
 
 }
