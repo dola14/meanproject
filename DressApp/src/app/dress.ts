@@ -1,7 +1,8 @@
 export class Dress {
     name: string
     description: string
-    originalprice: number
-    rentalprice: number
+    price: number
     image: string
+    renton: Date
+    rentto: Date
 }
