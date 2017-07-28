@@ -5,8 +5,8 @@ var DressSchema = new mongoose.Schema({
    // userId: {type: Schema.Types.ObjectId, ref: 'User'},    
     name:  { type: String, required: true, minlength: 6},
     description: { type: String, required: true},
-    price: { type: Number, required: true},
-    size: { type: String, required: true},
+    originalprice: { type: Number, required: true},
+    rentalprice: { type: Number, required: true},
     image: { type: String}
 })
 

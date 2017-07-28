@@ -6,9 +6,7 @@ module.exports = function(app) {
        // res.json({status: true})
         Dresses.create(req, res);
 
-    })
-
-    
+    })    
 
     app.all("*", (req,res,next) => {
         res.sendfile(path.resolve("./DressApp/dist/index.html"))

@@ -17,8 +17,9 @@ import { NewdressComponent } from './newdress/newdress.component';
 import { NewdressService } from './newdress.service';
 
 const routes: Routes = [
-  {path:"", pathMatch: 'full', component: DashboardComponent}
- // {path:"", pathMatch: 'full', component: SingledressComponent}
+ // {path:"", pathMatch: 'full', component: DashboardComponent},
+ {path:"", pathMatch: 'full', component: SingledressComponent}
+ //{path:"singledress", component: SingledressComponent}
  // {path:"dashboard/:id", component: DashboardComponent}
 ];
 
